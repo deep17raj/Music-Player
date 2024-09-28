@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg-grey">
+      <div class="left">
+        <div class="close">
+          <img class="invert" src="close.svg" alt="" />
+        </div>
+        <div class="home p-1 border up">
+          <div class="img-logo li-image">
+            <img class="invert" src="logo.svg" alt="spotify-logo" />
+          </div>
+
+          <div class="main">
+            <ul>
+              <div class="home2">
+                <li class="li-image">
+                  <img class="invert" src="home.svg" alt="home" />
+                  <p class="invert">Home</p>
+                </li>
+              </div>
+              <div class="search">
+                <li class="li-image">
+                  <img class="invert" src="search.svg" alt="search" />
+                  <p class="invert">Search</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="library border down">
+          <div>
+            <div class="heding flex gap-1 p-2">
+              <div class="playlist-logo invert logo">
+                <img src="playlist.svg" alt="" />
+              </div>
+              <p class="invert">Your Library</p>
+            </div>
+
+            <div class="song-list invert dark-container">
+              <ul></ul>
+            </div>
+
+            <div class="footer p-1">
+              <div class="flex gap-1 m-2">
+                <a href="https://www.spotify.com/in-en/legal/">
+                  <p data-encore-id="type">Legal</p>
+                </a>
+
+                <a href="https://www.spotify.com/in-en/privacy/">
+                  <p data-encore-id="type">Privacy Center</p>
+                </a>
+
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                  <p data-encore-id="type">Privacy Policy</p>
+                </a>
+              </div>
+              <div class="flex gap-1 m-2">
+                <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                  <p data-encore-id="type">Cookies</p>
+                </a>
+
+                <a
+                  href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                >
+                  <p data-encore-id="type">About Ads</p>
+                </a>
+
+                <a href="https://www.spotify.com/in-en/accessibility/">
+                  <p data-encore-id="type">Accessibility</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-black">
+        <div class="header flex">
+          <div class="nav">
+            <div class="arrow-buttons gap-1 flex">
+              <div class="hamburger invert">
+                <img src="hamburger.svg" alt="" />
+              </div>
+              <div class="left-button invert">
+                <img class="invert" src="left-arrow.svg" alt="left-arrow" />
+              </div>
+              <div class="right-button invert">
+                <img class="invert" src="rigt-arrow.svg" alt="rigt-arrow" />
+              </div>
+            </div>
+          </div>
+          <div class="buttons flex gap-1">
+            <div class="signup">
+              <button class="signup-btn">Sign up</button>
+            </div>
+            <div class="login">
+              <button class="login-btn">Log in</button>
+            </div>
+          </div>
+        </div>
+        <div class="SpotifyPlaylist">
+          <h1 class="invert">Spotify Playlist</h1>
+          <div class="card-container flex gap-1">
+            <div class="card card-border">
+              <!-- <div class="play">
+                <img src="play.svg" alt="play-button" />
+              </div> -->
+              <img
+                src="https://i.scdn.co/image/ab67706f000000025d8702ead7f24cd310c571c1"
+                alt=""
+              />
+              <h2 class="invert">Today's Top Hits</h2>
+              <p class="invert">SZA is on top of the Hottest 50!</p>
+            </div>
+            <div class="card card-border">
+              <!-- <div class="play">
+                <img src="play.svg" alt="play-button" />
+              </div> -->
+              <img
+                src="https://i.scdn.co/image/ab67706f000000025d8702ead7f24cd310c571c1"
+                alt=""
+              />
+              <h2 class="invert">Today's Top Hits</h2>
+              <p class="invert">SZA is on top of the Hottest 50!</p>
+            </div>
+          </div>
+        </div>
+        <div class="player">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+          <div class="aboveBar flex">
+            <div class="song-info invert"></div>
+            <div class="song-buttons flex">
+              <div class="prev">
+                <img
+                  id="prevSong"
+                  class="invert prev-song"
+                  src="previous.svg"
+                  alt=""
+                />
+              </div>
+              <div class="play-song">
+                <img id="playAndPause" class="invert" src="play2.svg" alt="" />
+              </div>
+              <div class="next">
+                <img
+                  id="nextSong"
+                  class="invert next-song"
+                  src="next.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="volumeandtime ">
+              
+            <div class="song-time invert"></div>
+            <div class="volume flex"><img class="invert" src="volume.svg" alt="">
+            <input type="range" name="volume" id="volRange"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
